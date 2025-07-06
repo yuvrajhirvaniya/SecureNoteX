@@ -1,0 +1,64 @@
+name: vault_guardian
+description: VaultGuardian - Your Personal Digital Fortress. Secure storage with military-grade encryption and biometric protection.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # State Management
+  provider: ^6.1.1
+
+  # Local Database
+  sqflite: ^2.3.0
+  path: ^1.8.3
+
+  # Encryption
+  encrypt: ^5.0.1
+  crypto: ^3.0.3
+  pointycastle: ^3.7.3
+
+  # Secure Storage
+  flutter_secure_storage: ^9.0.0
+
+  # Biometric Authentication
+  local_auth: ^2.1.6
+
+  # UI Components
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_staggered_animations: ^1.1.1
+  shimmer: ^3.0.0
+  lottie: ^3.0.0
+  flutter_svg: ^2.0.9
+  glassmorphism: ^3.0.0
+
+  # Charts and Data Visualization
+  fl_chart: ^0.68.0
+  syncfusion_flutter_charts: ^26.2.14
+  animated_text_kit: ^4.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets
+  # assets:
+  #   - images/
+
+  # Fonts
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic

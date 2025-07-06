@@ -365,7 +365,6 @@ class _AuthScreenState extends State<AuthScreen> with TickerProviderStateMixin {
     }
     return const SizedBox.shrink();
   }
-  
 
   // Helper methods
   IconData _getStatusIcon(AuthProvider authProvider) {

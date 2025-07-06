@@ -1,4 +1,4 @@
-# Secure Flutter App
+# SecureNoteX Flutter App
 
 A comprehensive Flutter mobile application that securely stores sensitive user data using SQLite, AES 256-bit encryption, and biometric authentication.
 
@@ -52,21 +52,6 @@ lib/
     └── entry_detail_screen.dart # Detailed entry view
 ```
 
-## Dependencies
-
-### Core Dependencies
-- `flutter`: Flutter SDK
-- `provider`: State management
-- `sqflite`: SQLite database
-- `encrypt`: AES encryption
-- `flutter_secure_storage`: Secure key storage
-- `local_auth`: Biometric authentication
-
-### Supporting Dependencies
-- `crypto`: Cryptographic functions
-- `pointycastle`: Additional cryptographic algorithms
-- `path`: File path utilities
-
 ## Setup Instructions
 
 ### 1. Prerequisites
@@ -102,95 +87,3 @@ Add the following to `ios/Runner/Info.plist`:
 <key>NSFaceIDUsageDescription</key>
 <string>This app uses Face ID for secure authentication</string>
 ```
-
-## Usage
-
-### First Launch
-1. The app will generate and securely store encryption keys
-2. Biometric authentication setup will be prompted
-3. Sample data will be added in debug mode for demonstration
-
-### Adding Secure Entries
-1. Tap the "+" button on the home screen
-2. Select entry type (Note, Password, Credit Card, Document, Other)
-3. Enter title and content
-4. Content is automatically encrypted before storage
-
-### Viewing Entries
-1. Browse entries by type using tabs
-2. Search entries by title
-3. Tap any entry to view details
-4. Copy content to clipboard securely
-
-### Authentication
-- Biometric authentication required on app launch
-- Session timeout configurable (default: 15 minutes)
-- Automatic re-authentication for sensitive operations
-
-## Security Considerations
-
-### Data Protection
-- All sensitive content encrypted with AES-256
-- Encryption keys never stored in plain text
-- Database schema designed to minimize data exposure
-
-### Authentication Security
-- Biometric data never leaves the device
-- Fallback to device credentials when biometric unavailable
-- Session management prevents unauthorized access
-
-### Best Practices Implemented
-- Secure random key generation
-- Proper IV (Initialization Vector) usage
-- PKCS7 padding for block cipher
-- Secure storage using platform keychains
-- Input validation and sanitization
-
-## Testing
-
-### Debug Features
-- Simulate authentication for testing
-- Sample data generation
-- Detailed error logging
-- Biometric capability information
-
-### Manual Testing
-1. Test biometric authentication flow
-2. Verify data encryption/decryption
-3. Test session timeout behavior
-4. Validate CRUD operations
-5. Test search functionality
-
-## Troubleshooting
-
-### Common Issues
-
-#### Biometric Authentication Not Working
-- Ensure device has biometric capabilities
-- Check if biometric credentials are enrolled
-- Verify app permissions
-
-#### Encryption Errors
-- Clear app data to regenerate keys
-- Check secure storage permissions
-- Verify encryption service initialization
-
-#### Database Issues
-- Clear app data to reset database
-- Check file system permissions
-- Verify SQLite compatibility
-
-## Contributing
-
-1. Follow Flutter best practices
-2. Maintain security standards
-3. Add tests for new features
-4. Update documentation
-
-## License
-
-This project is for educational and demonstration purposes. Please review and adapt security measures for production use.
-
-## Disclaimer
-
-This application demonstrates secure data storage techniques. For production use, conduct thorough security audits and follow platform-specific security guidelines.

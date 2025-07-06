@@ -201,10 +201,22 @@ class DatabaseService {
         where: 'id = ?',
         whereArgs: [id],
       );
-      
+
       return count;
     } catch (e) {
       throw Exception('Failed to delete secure entry: $e');
+    }
+  }
+
+  /// Delete all secure entries
+  Future<int> deleteAllSecureEntries() async {
+    try {
+      final db = await database;
+      final count = await db.delete(_tableSecureEntries);
+
+      return count;
+    } catch (e) {
+      throw Exception('Failed to delete all secure entries: $e');
     }
   }
 

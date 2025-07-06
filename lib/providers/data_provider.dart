@@ -195,6 +195,34 @@ class DataProvider extends ChangeNotifier {
     }
   }
 
+  /// Delete all secure entries
+  Future<bool> deleteAllEntries() async {
+    _setLoading(true);
+    _clearError();
+
+    try {
+      final count = await _databaseService.deleteAllSecureEntries();
+
+      if (count >= 0) {
+        // Clear the local list
+        _entries.clear();
+
+        await _updateEntriesCount();
+        _setLoading(false);
+        notifyListeners(); // Ensure UI updates immediately
+        return true;
+      } else {
+        _setError('Failed to delete all entries');
+        _setLoading(false);
+        return false;
+      }
+    } catch (e) {
+      _setError('Failed to delete all entries: $e');
+      _setLoading(false);
+      return false;
+    }
+  }
+
   /// Search entries by title
   Future<List<SecureEntry>> searchEntries(String query) async {
     if (query.trim().isEmpty) {

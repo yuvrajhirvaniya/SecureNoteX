@@ -1,0 +1,1 @@
+B:\BE-D2D\BE\Be-sem_7\project auth\build\app\intermediates\cxx\RelWithDebInfo\155d183k\obj\x86_64

@@ -1,0 +1,2 @@
+B:/BE-D2D/BE/Be-sem_7/project auth/android/app/.cxx/RelWithDebInfo/155d183k/x86_64/CMakeFiles/edit_cache.dir
+B:/BE-D2D/BE/Be-sem_7/project auth/android/app/.cxx/RelWithDebInfo/155d183k/x86_64/CMakeFiles/rebuild_cache.dir

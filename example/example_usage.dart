@@ -1,11 +1,11 @@
 /// Example usage of the Secure Flutter App services
 /// This file demonstrates how to use the core services independently
 
-import 'package:vault_guardian/services/encryption_service.dart';
-import 'package:vault_guardian/services/secure_storage_service.dart';
-import 'package:vault_guardian/services/database_service.dart';
-import 'package:vault_guardian/services/biometric_service.dart';
-import 'package:vault_guardian/models/secure_entry.dart';
+import 'package:secure_note_x/services/encryption_service.dart';
+import 'package:secure_note_x/services/secure_storage_service.dart';
+import 'package:secure_note_x/services/database_service.dart';
+import 'package:secure_note_x/services/biometric_service.dart';
+import 'package:secure_note_x/models/secure_entry.dart';
 
 /// Example of using the encryption service
 Future<void> encryptionExample() async {

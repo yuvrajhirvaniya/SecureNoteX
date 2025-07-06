@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.INTERNET" />
     
     <application
-        android:label="Secure Flutter App"
+        android:label="SecureNoteX"
         android:name="${applicationName}"
         android:icon="@drawable/ic_launcher">
         

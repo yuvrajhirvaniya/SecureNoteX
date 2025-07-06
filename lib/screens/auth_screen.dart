@@ -156,7 +156,7 @@ class _AuthScreenState extends State<AuthScreen> with TickerProviderStateMixin {
         ),
         const SizedBox(height: 24),
         const Text(
-          'VaultGuardian',
+          'SecureNoteX',
           style: TextStyle(
             fontSize: 32,
             fontWeight: FontWeight.bold,

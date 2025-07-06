@@ -56,7 +56,7 @@ class MyApp extends StatelessWidget {
         ),
       ],
       child: MaterialApp(
-        title: 'VaultGuardian - Digital Fortress',
+        title: 'SecureNoteX - Digital Fortress',
         theme: AppTheme.lightTheme,
         debugShowCheckedModeBanner: false,
         home: Consumer<AuthProvider>(

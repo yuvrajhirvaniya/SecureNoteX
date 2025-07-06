@@ -2,13 +2,13 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:provider/provider.dart';
 
-import 'package:vault_guardian/main.dart';
-import 'package:vault_guardian/services/biometric_service.dart';
-import 'package:vault_guardian/services/encryption_service.dart';
-import 'package:vault_guardian/services/secure_storage_service.dart';
-import 'package:vault_guardian/services/database_service.dart';
-import 'package:vault_guardian/providers/auth_provider.dart';
-import 'package:vault_guardian/providers/data_provider.dart';
+import 'package:secure_note_x/main.dart';
+import 'package:secure_note_x/services/biometric_service.dart';
+import 'package:secure_note_x/services/encryption_service.dart';
+import 'package:secure_note_x/services/secure_storage_service.dart';
+import 'package:secure_note_x/services/database_service.dart';
+import 'package:secure_note_x/providers/auth_provider.dart';
+import 'package:secure_note_x/providers/data_provider.dart';
 
 void main() {
   group('Secure Flutter App Tests', () {

@@ -27,6 +27,18 @@ android {
     compileSdk 35
     ndkVersion "26.1.10909125"
 
+    // Add this block inside android { ... }
+    signingConfigs {
+        release {
+            storeFile file("C:/Users/91873/my-release-key.jks")
+            storePassword project.property("MY_STORE_PASSWORD")
+            keyAlias 'my-key-alias'
+            keyPassword project.property("MY_KEY_PASSWORD")
+
+        }
+        
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_11
         targetCompatibility JavaVersion.VERSION_11
@@ -51,8 +63,13 @@ android {
 
     buildTypes {
         release {
-            signingConfig signingConfigs.debug
+            // Change from debug to your release signing config here
+            signingConfig signingConfigs.release
+            // Also, consider adding minifyEnabled and proguard config for release
+            minifyEnabled false
+            // proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
     }
 }
 
